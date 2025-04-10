@@ -20,7 +20,7 @@ pipeline {
           // Run the ReactJS tests
           sh "npm test"
         }
-    //}
+    }
     stage('SonarQube Analysis') {
       environment {
         scannerHome = tool 'sonarqube'
